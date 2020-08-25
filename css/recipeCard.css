@@ -1,0 +1,131 @@
+/* General */
+.recipeCard {
+	margin: 20px 0px;
+}
+.cardBreak {
+	height: 1px;
+	width: 100%;
+	background-color: white;
+}
+div.borderCont {
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+ul ol {
+	padding: 5px 5px;
+	padding-left: 10px;
+}
+h2 {
+	padding: 10px;
+	padding-bottom: 5px;
+}
+/* Sorting out initial card */
+.initialCard {
+	position: relative;
+	background-color: #ccc;
+	height: 250px;
+	width: 100%;
+	border-radius: 20px;
+}
+.vgnSign, .vgtSign {
+	background-image: url("../images/vSymbols.png");
+	background-position: -60px 0px;
+	float: left;
+	height: 60px;
+	width: 60px;
+}
+.vgtSign {
+	background-position: 0 0;
+}
+a.revealIngredientsButton  {
+	background-image: url("../images/vSymbols.png");
+	background-position: 0px -60px;
+	position: absolute;
+	right: 0px;
+	height: 60px;
+	width: 60px;
+}
+.backButton {
+	height: 60px;
+	width: 60px;
+	position: absolute;
+	right: 5px;
+	z-index: 4;
+	background-image: url("../images/buttons.png");
+	background-position: -120px 0px;
+}
+.recipeName {
+	z-index: 3;
+	position: absolute;
+	bottom: 0px;
+	text-indent: 0;
+	float: left;
+	height: 60px;
+	display: table;
+}
+.recipeName h2 {
+	padding: 20px;
+	display: table-cell;
+	vertical-align: middle;
+}
+.time {
+	position: absolute;
+	bottom: 0px;
+	right: 10px;
+	height: 60px;
+	text-align: center;
+	width: 60px;
+}
+.servings {
+	position: absolute;
+	bottom: 0px;
+	right: 70px;
+	height: 60px;
+	width: 60px;
+	text-align: center;
+}
+/* Sorting out ingredients display */ 
+.ingredientsDisplay {
+	position: relative;
+	z-index: 3;
+	padding: 20px;
+}
+.cardBlur {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	opacity: 0.15;
+	z-index: 2;
+	border-radius: 20px;
+}
+/* Sorting out full card */
+.fullCard {
+	position: relative;
+	background-color: #ccc;
+	width: 100%;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	padding-bottom: 10px;
+}
+.utensilsDisplay, .alrgDisplay, .alrgList {
+	display: inline-block;
+	vertical-align: top;
+	width: 150px;
+}
+.fullCard .alrgDisplay {
+	width: 300px;
+}
+.alrgDisplay .alrgList {
+	width: 100px;
+}
+.hideFull {
+	position: absolute;
+	right: 0;
+	top: 7px;
+	width: 60px;
+	height: 60px;
+	background-image: url('../images/buttons.png');
+	background-position: -120px -60px;
+}

@@ -1,0 +1,201 @@
+/* General formatting */
+* {
+	color: white;
+	padding: 0;
+	margin: 0;
+}
+html, body {
+	height: 100%;
+	background-color: #ddd;
+}
+body {
+	font: 14px/1.1 Helvetica;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+input {
+	outline: none;
+	background-color: #ddd;
+}
+ul {
+	text-align: left;
+}
+ul ol {
+	border: none;
+	padding: 5px 0px;
+}
+input[type='submit'] {
+	border: none;
+	border-radius: 5px;
+	background-color: #ddd;
+	padding: 3px;
+	margin-top: 10px;
+}
+/* Adding structure to the page */
+#pageWrap {
+	height: 100%;
+	width: 960px;
+	margin: 0px auto 50px;
+	position: relative;
+}
+.row {
+	width: 100%;
+	height: 100px;
+}
+.data {
+	display: none;
+}
+.invisible {
+	display: none;
+}
+.permInvisible {
+	display: none;
+}
+#backgroundBlur {
+	height: 100%;
+	width: 960px;
+	z-index: 3;
+	background-color: #000;
+	opacity: 0.5;
+	top: 0px;
+	position: fixed;
+}
+/* Sorting navigation bar */
+#header {
+	width: 100%;
+	background-color: #ccc;
+	height: 100px;
+	position: relative;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+#header .button, #sidebar .button {
+	background-image: url("../images/buttons.png");
+	height: 60px;
+	width: 60px;
+	margin: 20px;
+	display: inline-block;
+	border-radius: 10px;
+	float: left;
+}
+.button.filter {
+	background-position: -60px 0px;
+}
+.button.login {
+	background-position: 0px -60px;
+	float: right;
+}
+.button.back {
+	background-position: -120px 0px;
+}
+#header form {
+	display: inline-block;
+	margin: 20px;
+	margin-right: 0px;
+	height: 60px;
+	width: 620px;
+	float: left;
+	position: relative;
+}
+#header form .dropDown {
+	background-color: #ddd;
+	position: absolute;
+	height: 40px;
+	width: 108px;
+	top: 10px;
+	border: none;
+	border-right: 1px solid #ccc;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	text-indent: 3px;
+}
+#header form .dropDown:focus {
+	outline: none;
+	border-bottom-left-radius: 0;
+}
+#header form .dropDown option:focus {
+	outline: none;
+}
+#header form .button {
+	float: right;
+	text-indent: -999999px;
+	border: none;
+	margin: 0px;
+	background-position: -60px -60px;
+	background-color: #ccc;
+}
+#header form .searchBar {
+	background-color: #ddd;
+	margin-top: 10px;
+	border: none;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	width: 400px;
+	height: 40px;
+	text-indent: 10px;
+	margin-left: 108px;
+}
+/* Formatting Sidebar */
+#sidebar {
+	height: 100%;
+	width: 35%;
+	background-color: #ccc;
+	z-index: 5;
+	position: fixed;
+	top: 0px;
+}
+#sidebar .row {
+	background-color: #bbb;
+	border-bottom-left-radius: 20px;
+}
+#sidebar .sidebarWrapper {
+	background-color: #bbb;
+	border-radius: 20px;
+	display: table;
+	margin: auto;
+	width: 80%;
+	margin-top: 20px;
+	padding: 20px;
+}
+#sidebar h2 {
+	padding: 0;
+	margin: 0px 0px 5px 20px;
+}
+#sidebar ul {
+	margin-left: 10px;
+}
+/* Formatting Temporary Filter menu */
+#tempFiltWrapper {
+	z-index: 5;
+	position: fixed;
+	margin: 60px 260px;
+	width: 400px;
+	background-color: #ccc;
+	border-radius: 20px;
+	padding: 20px;
+	text-align: center;
+}
+.closeButton {
+	background-color: #ddd;
+	width: 15px;
+	height: 15px;
+	text-align: center;
+	line-height: 15px;
+	border-radius: 5px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+.alrgWrapper {
+	padding: 1px;
+	width: 20%;
+	display: inline-block;
+}
+.alrgWrapper input[type='checkbox'] {
+	float: right;
+}
+.alrgWrapper label {
+	float: left;
+}
